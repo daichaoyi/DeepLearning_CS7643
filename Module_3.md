@@ -9,6 +9,9 @@ The LLM has the application in predictive typing; speech recognition, grammar co
 
 <img width="715" alt="Screen Shot 2023-10-29 at 12 01 08 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/e1b90986-b7cb-4230-bf04-8f9cbad2018d">
 
+In RNN, h_t is a state variable, h_t is a function of the previous state, and the input variable x_t.
+
+<img width="705" alt="Screen Shot 2023-10-29 at 12 07 16 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/0ee7c343-a793-49de-9ccb-6b827d5e6b5b">
 
 
 
