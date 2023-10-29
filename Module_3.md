@@ -16,7 +16,7 @@ In RNN, h_t is a state variable, h_t is a function of the previous state, and th
 <img width="706" alt="Screen Shot 2023-10-29 at 12 13 12 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/753663b2-f3e3-4f7f-adc4-aa418524e9ed">
 
 'vanilla' RNN is difficult due to vanishing gradients.
-$\abs(W_{\theta})<1$
+$|W_{\theta}|<1$
 
 
 
