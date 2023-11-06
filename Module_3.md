@@ -21,6 +21,10 @@ $|W_{\theta}|<1$   LSTM was created to alleviate vanishing gradients.
 <img width="734" alt="Screen Shot 2023-10-29 at 12 31 18 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/7a0e7d90-ee60-4eed-903b-8765d75eba40">
 
 
+What is embedding? A mapping between objects to vector, Generally, we want that functio to create a map such that similar objects are grouped together. 
+
+How is graph embedding learned? We optimize the objective that connected nodes have more similar embeddings than the unconnected node via gradient descent.
+
 
 
 
