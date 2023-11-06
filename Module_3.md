@@ -39,7 +39,11 @@ What is the cell state in LSTM?  You can think of it as the “memory” of the 
 
 What are the major four component of RNN? 1. Input 2. Hidden state  3. Weight/Parameters  4. Output
 
-Why is the use of fully connected layers/MLPs problematic for sequential/time-series data? in fully connected layer, the biases and weights are independent. 
+Why is the use of fully connected layers/MLPs problematic for sequential/time-series data? in fully connected layer, the biases and weights are independent. prone to overfit.
+
+What roles did hidden state play in RNN? it's a contextual vector at time t that acts as the 'memory' of the past states, it is calculated as the function of the current input(x_t) and the past hidden state h(t-1).
+
+
 
 
 
