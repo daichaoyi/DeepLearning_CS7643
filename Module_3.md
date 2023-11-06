@@ -43,6 +43,36 @@ Why is the use of fully connected layers/MLPs problematic for sequential/time-se
 
 What roles did hidden state play in RNN? it's a contextual vector at time t that acts as the 'memory' of the past states, it is calculated as the function of the current input(x_t) and the past hidden state h(t-1).
 
+RNN update rule: input and hidden are fed through 1, linear layer, 2 followed by non-linear tanh, 3 multiplied by output linear layer to get logits, 4 softmax to get probabilities. 
+
+RNN how is loss calculated？ loss is summed over time
+
+RNN: hidden weights are shared throughout the sequence. 
+
+RNN cons: 1 Vanishing gradients 2 Exploding gradients 3 Limited “memory” - Can handle short-term dependencies but can’t handle long term
+4 Lack control over memory - unlike LSTM, does not have mechanism to control what information should be kept.
+
+RNN pros: smaller parameter size
+
+LSTM update rules: FICO 1 forget gate 2 input gate 3 cell gate 4 output gate
+
+LSTM what component is passed through the layers:cell (which represents memory)
+forget gate, decide what information from the cell should be discard.
+input gate, update the inforamtion with the cell gate
+output gate, decides the next hidden state based on the cell state
+
+GRU main difference to LSTM: single gate controls forget and cell state update
+
+gradient clipping:control gradiant explode
+
+Why does MLP not working for modeling sequence? 1. cannot support variable sized inputs 2. no inherent temporal structure 3. cannot maintain 'state' of sequence
+
+
+
+
+
+
+
 
 
 
