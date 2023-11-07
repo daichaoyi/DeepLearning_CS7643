@@ -68,7 +68,7 @@ gradient clipping:control gradiant explode
 
 Why does MLP not working for modeling sequence? 1. cannot support variable sized inputs 2. no inherent temporal structure 3. cannot maintain 'state' of sequence
 
-application of languate model: predictive typing  ASR  grammar correction
+application of language model: predictive typing  ASR  grammar correction
 
 Teacher forcing: During training, the model is also fed with the true target sequence, not its own generated output.
 
