@@ -26,6 +26,7 @@ What is embedding? A mapping between objects to vector, Generally, we want that 
 How is graph embedding learned? We optimize the objective that connected nodes have more similar embeddings than the unconnected node via gradient descent.
 
 The perplexity measures the amount of “randomness” in our model. the lower is better. 
+P(“a red fox.”) = P(“a”) * P(“red” | “a”) * P(“fox” | “a red”) * P(“.” | “a red fox”)
 
 What are language models fundamentally used for?  To estimate the probability of a sequences of words given all the preceding words.
 
@@ -67,10 +68,13 @@ gradient clipping:control gradiant explode
 
 Why does MLP not working for modeling sequence? 1. cannot support variable sized inputs 2. no inherent temporal structure 3. cannot maintain 'state' of sequence
 
+application of languate model: predictive typing  ASR  grammar correction
 
+Teacher forcing: During training, the model is also fed with the true target sequence, not its own generated output.
 
+knowledge distillation: Smaller model (student) learns to mimic the predictions of a larger, more complex model (teacher) by transferring its knowledge
 
-
+Knowledge distillation: Teacher student loss CE loss between teacher and student 
 
 
 
