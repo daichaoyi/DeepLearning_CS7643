@@ -76,8 +76,28 @@ knowledge distillation: Smaller model (student) learns to mimic the predictions 
 
 Knowledge distillation: Teacher student loss CE loss between teacher and student 
 
+GloVe is an unsupervised learning algorithm for obtaining vector representations for words. Is was quite similar to Word2Vec method.
+
+The skip-gram model is a way of teaching a computer to understand the meaning of words based on the context they are used in.
+predict the context based on the middle word.
+In contrast, the word of bag(CBOW) predict the middle word based on the context.
+
+skip-gram identity activation --> softmax activation --> cross-entropy loss function
 
 
+Intrinsic evaluation:
+• Evaluation on a specific, intermediate task
+• Fast to compute performance
+• Helps understand subsystem
+• Needs positive correlation with real task to determine usefulness
+
+
+Extrinsic evaluation:
+• Is the evaluation on a real task
+• Can be slow to compute performance
+• Unclear if subsystem is the problem, other subsystems, or internal
+interactions
+• If replacing subsystem improves performance, the change is likely good
 
 
 
