@@ -82,8 +82,10 @@ The skip-gram model is a way of teaching a computer to understand the meaning of
 predict the context based on the middle word.
 In contrast, the word of bag(CBOW) predict the middle word based on the context.
 
+
 skip-gram identity activation --> softmax activation --> cross-entropy loss function
 
+<img width="1373" alt="Screen Shot 2023-11-06 at 10 04 56 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/aba1f198-d860-4bf9-90ae-163347568c03">
 
 Intrinsic evaluation:
 • Evaluation on a specific, intermediate task
