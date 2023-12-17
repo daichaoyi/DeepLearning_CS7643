@@ -15,6 +15,9 @@ Each word input that goes to encoder will generate a context, this context will 
 
 <img width="759" alt="Screen Shot 2023-12-17 at 1 45 12 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/dc1c0c84-43fa-4ecd-82d0-3899e94ae8fe">
 
+With attention, the hidden state was passed to decoder. In the decoding process, the attention will find out the most relevant input hidden state, then use the softmax to generate output. 
+
+
 
 
 
