@@ -20,3 +20,5 @@ Each word input that goes to encoder will generate a context, this context will 
 
 
 
+
+
