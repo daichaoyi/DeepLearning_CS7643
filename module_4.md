@@ -11,5 +11,4 @@ The common practice was has input into encoder, than we obtain context, use deco
 
 The architecture of RNN, for encoder, the input was the original text and hidden state, then it pass the hidden state and output to the decoder.  
 
-
-
+Each word input that goes to encoder will generate a context, this context will be passed to decoder. But each word has the same weight to the context. This does not make sense, therefore, we have the motivation for the attention.
