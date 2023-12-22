@@ -17,10 +17,11 @@ With attention, the hidden state was passed to decoder. In the decoding process,
 <img width="759" alt="Screen Shot 2023-12-17 at 1 45 12 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/dc1c0c84-43fa-4ecd-82d0-3899e94ae8fe">
 
 In the framework of attention, the encoder translate the source word into hidden state. In the framework of the simple Encoder-Decoder, where only the last hidden state was passed to decoder as the context vector. In the attention model, all the hidden state was passed to decoder. In the decoding process, attention has an additional step: Looking for the most relevant input hidden state at the current time. (Usually, the relavance was computed through softmax).  
-$\sqrt{3x-1}+(1+x)^2$   $`\sqrt{3x-1}+(1+x)^2`$
-
+In the encoder-decoder structure, the context vector is:
 $y_i=g(C, y_1, y_2, ..., y_{i-1})$
 
+In the attention framework, the context vector is:
+$y_i=g(C_i, y_1, y_2, ..., y_{i-1})$  C_i is the hidden states in encoders.
 
 
 
