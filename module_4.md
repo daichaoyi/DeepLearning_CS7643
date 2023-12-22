@@ -22,8 +22,7 @@ $y_i=g(C, y_1, y_2, ..., y_{i-1})$
 
 In the attention framework, the context vector is:
 $y_i=g(C_i, y_1, y_2, ..., y_{i-1})$  $C_i$ are the hidden states. 
-
-$C_i=\sum^{T_x}{j=1} a_{ij}h_j$
+$C_i=\sum_{j=1}^{T_x} a_{ij}h_j$
 
 
 
