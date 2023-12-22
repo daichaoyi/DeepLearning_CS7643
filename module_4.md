@@ -18,8 +18,7 @@ With attention, the hidden state was passed to decoder. In the decoding process,
 
 In the framework of attention, the encoder translate the source word into hidden state. In the framework of the simple Encoder-Decoder, where only the last hidden state was passed to decoder as the context vector. In the attention model, all the hidden state was passed to decoder. In the decoding process, attention has an additional step: Looking for the most relevant input hidden state at the current time. (Usually, the relavance was computed through softmax).  
 
-$\sqrt{3x-1}+(1+x)^2$
-
+$`\sqrt{3x-1}+(1+x)^2`$
 
 
 
