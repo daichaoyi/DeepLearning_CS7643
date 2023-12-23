@@ -26,7 +26,7 @@ $C_i=\sum_{j=1}^{T_x} a_{ij} h_j$  $a_{ij}$ is the attention weight,
 
 $e_{ij}=\alpha(s_{i-1}, h_j)$
 
-$a_{ij}= \frac{exp(e_{ij})}{\sum^{T_x}_{k=1} exp(e_{ik})}$
+$a_{ij}=\frac{exp(e_{ij})}{\sum^{T_x}_{k=1} exp(e_{ik})}$
 
 $C_{i}= \sum_{j=1}{T_x}a_{ij}h_j$
 
