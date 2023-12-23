@@ -24,7 +24,17 @@ In the attention framework, the context vector is:
 $y_i=g(C_i, y_1, y_2, ..., y_{i-1})$  $C_i$ are the hidden states. 
 $C_i=\sum_{j=1}^{T_x} a_{ij} h_j$  $a_{ij}$ is the attention weight,
 
-$\[ \sum_{n=1}^{\infty} 2^{-n} = 1 \]$
+$e_{ij}=\alpha(s_{i-1}, h_j)$
+
+$a_{ij}= \frac{exp(e_{ij})}{\sum^{T_x}_{k=1} exp(e_{ik})}$
+
+$C_{i}= \sum_{j=1}{T_x}a_{ij}h_j$
+
+$S_i=f(s_{i-1}, y_{i-1}, c_i)$
+
+$y_i= g(y_{i-1}, s_i, c_i)$
+
+
 
 
 
