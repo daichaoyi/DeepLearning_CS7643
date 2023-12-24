@@ -34,8 +34,11 @@ $S_i=f(s_{i-1}, y_{i-1}, c_i)$
 
 $y_i= g(y_{i-1}, s_i, c_i)$
 
+<img width="701" alt="Screen Shot 2023-12-23 at 10 07 44 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/b9ff8113-4bfd-46fd-85a7-3955d23a29e6">
 
 
+
+<img width="730" alt="Screen Shot 2023-12-23 at 10 08 52 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/c187a735-d76b-461b-bf8c-45d9ef6075fd">
 
 
 
