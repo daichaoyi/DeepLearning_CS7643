@@ -46,16 +46,6 @@ The workflow of attention:
 6. The output of the feedforward neural networks indicates the output word of this time step.
 7. Repeat for the next time steps.
 
-打分过程在decoder的每个timestep完成。一起来看下attention如何工作的：
-
-<END>和初始化的decoder hidden state输入到attention decoder RNN。
-RNN产生新的hidden state (h4)。
-Attention 工作：使用encoder的hidden state和h4计算当前时刻的context vector (C4)。
-将h4和C4拼接。
-将第4步产生的向量输入的前向神经网络（这个网络和模型一起训练）
-前向神经网络的输出就是当前时刻的输出word。
-重复以上6步。
-第2步中输出的h4不能直接使用，而是需要通过attention机制，与encoder中的各个hidden states计算后，再通过FNN输出当前timestep的output。
 <img width="730" alt="Screen Shot 2023-12-23 at 10 08 52 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/c187a735-d76b-461b-bf8c-45d9ef6075fd">
 
 
