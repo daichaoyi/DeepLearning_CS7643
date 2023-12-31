@@ -48,9 +48,8 @@ The workflow of attention:
 
 <img width="730" alt="Screen Shot 2023-12-23 at 10 08 52 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/c187a735-d76b-461b-bf8c-45d9ef6075fd">
 
-
-
-
+Why transformer?
+1. RNN, CNN, the sequence to compute is left to right, or right to left. (1) The time t result is contingent on the t-1 result, it will restrict the parallel computation (2) Transformer was constituted by encoding and decoding. For the encoding part, it was consists of 6 encoders, for the decoding part, it was consisted by 6 decoders. The output of encoder will be the input of decoder. 
 
 
 
