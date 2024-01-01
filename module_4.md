@@ -51,6 +51,23 @@ The workflow of attention:
 Why transformer?
 1. RNN, CNN, the sequence to compute is left to right, or right to left. (1) The time t result is contingent on the t-1 result, it will restrict the parallel computation (2) Transformer was constituted by encoding and decoding. For the encoding part, it was consists of 6 encoders, for the decoding part, it was consisted by 6 decoders. The output of encoder will be the input of decoder. 
 
+<img width="706" alt="Screen Shot 2024-01-01 at 9 55 00 AM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/4c84c1fe-5c62-4119-928d-317c9705e60e">
+
+Transformer was formed by encoding and decoding. In the encoding part, it was formed by 6 encoders, in the decoding part, it was formed by 6 decoders. The output of encoders works as the input of decoder. 
+
+
+<img width="714" alt="Screen Shot 2024-01-01 at 10 18 20 AM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/a6573901-8aa6-4e07-827d-1dad81b1dd1d">
+
+Encoder was formed by self-attention layer and feedforward Neural Network. FFNN process each output of the self-attention layer independently. 
+
+<img width="694" alt="Screen Shot 2024-01-01 at 10 25 55 AM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/af454791-3f1d-455e-a426-ac8eceeade80">
+
+Decoder was formed by three part: self-attention, encoder-decoder attention, feed forward.
+Decoder added a layer of Encoder-Decoder attention between self-attention and FFNN, this layer can let decoder focus on part of the input sentence. (which is similar to soft attention)
+
+<img width="713" alt="Screen Shot 2024-01-01 at 12 10 20 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/a1b8b2ff-49ff-4787-a835-48e3a1ccb382">
+
+
 
 
 
