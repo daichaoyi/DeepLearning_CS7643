@@ -65,6 +65,6 @@ Encoder was formed by self-attention layer and feedforward Neural Network. FFNN 
 Decoder was formed by three part: self-attention, encoder-decoder attention, feed forward.
 Decoder added a layer of Encoder-Decoder attention between self-attention and FFNN, this layer can let decoder focus on part of the input sentence. (which is similar to soft attention)
 
-
-
+Self-Attention
+Self-attention will help encoder assimulate the information of other words when processing the current input word. For example, when dealing with the "The animal didn't cross the street because it was too tired", the encoder will associate 'it' with the 'animal', it will let the encoder acquire more information. 
 
