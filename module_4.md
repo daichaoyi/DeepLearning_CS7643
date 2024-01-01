@@ -68,3 +68,47 @@ Decoder added a layer of Encoder-Decoder attention between self-attention and FF
 Self-Attention
 Self-attention will help encoder assimulate the information of other words when processing the current input word. For example, when dealing with the "The animal didn't cross the street because it was too tired", the encoder will associate 'it' with the 'animal', it will let the encoder acquire more information. 
 
+Self-attention是如何计算的？
+对于每个输入的embedding vector（即每个word），会生成3个向量，分别是Query Vector，Key Vector, Value Vector。这三个向量是通过训练中产生的三个权重矩阵（需要初始化）与embedding vector相乘得到。值得注意的是，这三个权重矩阵的维度（一般为64，关于投影后维度为什么要压缩，可以参考transformer中multi-head attention中每个head为什么要进行降维？）比embedding和encoder input/output vector要小很多。这是为了让multi-head attention的计算保持稳定。
+
+How to compute self-attention?
+1. For each input embedding vector, it will generate 3 vectors, query vector, key vector and value vector. It was generated through multiplying three weighting matrix with the embedding vectors.
+<img width="690" alt="Screen Shot 2024-01-01 at 4 18 32 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/67dcd3c2-b717-4e95-bb81-6f9b0804f79d">
+
+2. Calculate score,assume when we calculate the first word: 'Thinking', we need to compute the score for the input sentence and this word. This score represents how much focus was imposed on each word during the encoding. We use the dot product between key vector and remaining word's query vector.
+   
+<img width="721" alt="Screen Shot 2024-01-01 at 4 18 45 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/9c951988-9d54-460b-a55d-16dea5687092">
+
+3. score divided by n, $n=\sqrt{dim of key vector}$, it helps to obtain more stable gradients. Feed this result into softmax function, we get unified results. The most relevant word gets the highest score. 
+
+ <img width="705" alt="Screen Shot 2024-01-01 at 6 12 02 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/373576d9-8f29-45e7-8472-71cd4dd41f98">
+
+4. Each value vector times the softmax score, then get the weighted value vector. It was for amplifying the more relavant vector, and squeeze the less relavant vector. 
+
+5. Adds up the weighted value vectors from step 4, we get the self-attention layer for the current word.
+
+<img width="770" alt="Screen Shot 2024-01-01 at 6 16 42 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/1d032099-e852-4477-b3f5-932f7eff8c25">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
