@@ -89,6 +89,12 @@ How to compute self-attention?
 
 <img width="770" alt="Screen Shot 2024-01-01 at 6 16 42 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/1d032099-e852-4477-b3f5-932f7eff8c25">
 
+Multi-head attention
+Multi-headed was introduced to improve the attention layer from two aspects:
+1. the multi-head attention model can identify the reference of 'it' in the following sentence: The animal didn't cross the street because it was too tired.
+2. There are multiple Q,K,V weighting matrices, the number of the matrices is equal to the count of attention heads. For example, transformers uses 8 attention heads, in the encoder and decoder, there are 8 groups of Q,K,V weighting matrices, they are randomly initialized. After training, the Q,K,V matrices can map the input embedding to different representation subspaces. 
+
+<img width="708" alt="Screen Shot 2024-01-01 at 9 16 13 PM" src="https://github.com/daichaoyi/DeepLearning_CS7643/assets/50822172/fd09974f-9947-4aea-9baf-3f63911a5f89">
 
 
 
